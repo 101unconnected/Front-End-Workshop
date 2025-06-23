@@ -1,10 +1,8 @@
-// Toggle dark mode
 const toggle = document.getElementById('toggle-darkmode');
 toggle.addEventListener('click', () => {
   document.body.classList.toggle('dark-mode');
 });
 
-// Live search & filter
 const searchInput = document.getElementById('search');
 const filterSelect = document.getElementById('filter');
 const cards = document.querySelectorAll('.card');
@@ -31,7 +29,6 @@ function filterCards() {
 searchInput.addEventListener('input', filterCards);
 filterSelect.addEventListener('change', filterCards);
 
-// Pop-up interaktif saat kartu diklik
 cards.forEach(card => {
   card.addEventListener('click', () => {
     const title = card.querySelector('h2')?.innerText;
