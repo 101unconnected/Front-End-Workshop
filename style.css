@@ -1,0 +1,204 @@
+/* Reset & Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Georgia', serif;
+  background-color: #f5f5f5;
+  color: #222;
+  line-height: 1.6;
+  transition: background 0.3s ease, color 0.3s ease;
+  padding: 20px;
+}
+
+body.dark-mode {
+  background-color: #1a1a1a;
+  color: #e0e0e0;
+}
+
+/* Tambahan kontras untuk card di dark mode */
+body.dark-mode .card {
+  background-color: #2a2a2a;
+  color: #f0f0f0;
+}
+
+body.dark-mode .card-text {
+  color: #f0f0f0;
+}
+
+/* Toggle button */
+#toggle-darkmode {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: transparent;
+  border: 2px solid #ccc;
+  border-radius: 50%;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+
+/* Layout */
+.container {
+  max-width: 960px;
+  margin: 60px auto 40px;
+  padding: 0 20px;
+}
+
+/* Toolbar */
+.toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 20px;
+  margin-bottom: 20px;
+  align-items: center;
+}
+
+.toolbar label {
+  font-weight: bold;
+}
+
+.toolbar input,
+.toolbar select {
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: 1px solid #bbb;
+  font-size: 1rem;
+}
+
+/* Card layout */
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  width: 280px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+}
+
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.card-text {
+  padding: 16px;
+}
+
+.card-text h2 {
+  margin-bottom: 10px;
+  font-size: 1.25rem;
+  color: inherit;
+}
+
+/* Footer */
+footer.footer {
+  text-align: center;
+  margin-top: 40px;
+  padding: 20px;
+  background-color: #e0e0e0;
+  color: #222;
+  transition: background 0.3s, color 0.3s;
+}
+
+body.dark-mode footer.footer {
+  background-color: #2a2a2a;
+  color: #eee;
+}
+
+/* Modal Pop-up */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  animation: fadeIn 0.3s ease;
+}
+
+.modal {
+  background: #fff;
+  padding: 24px;
+  border-radius: 12px;
+  max-width: 500px;
+  width: 90%;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  animation: slideUp 0.3s ease;
+}
+
+.modal h2 {
+  margin-top: 0;
+  font-size: 1.6rem;
+  color: #333;
+}
+
+.modal p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.close-btn {
+  background: #222;
+  color: #fff;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background 0.2s ease;
+}
+
+.close-btn:hover {
+  background: #444;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Dark mode modal */
+body.dark-mode .modal {
+  background: #2a2a2a;
+  color: #f0f0f0;
+}
+
+body.dark-mode .close-btn {
+  background: #f0f0f0;
+  color: #1a1a1a;
+}

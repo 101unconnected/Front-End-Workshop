@@ -1,0 +1,103 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gunung Indonesia</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="light-mode">
+  <button id="toggle-darkmode" aria-label="Toggle Dark Mode">🌓</button>
+
+  <main class="container">
+    <div class="toolbar">
+      <label for="search">🔎 Cari Gunung:</label>
+      <input type="text" id="search" placeholder="Ketik nama gunung...">
+
+      <label for="filter">📊 Filter Kesulitan:</label>
+      <select id="filter">
+        <option value="all">Semua</option>
+        <option value="mudah">Mudah</option>
+        <option value="sedang">Sedang</option>
+        <option value="sulit">Sulit</option>
+      </select>
+    </div>
+
+    <section class="card-container">
+      <div class="card" data-name="rinjani" data-level="sulit" data-detail="Rinjani adalah bagian dari Taman Nasional Gunung Rinjani. Pendakian biasanya dimulai dari Sembalun atau Senaru. Terdapat danau Segara Anak di kaldera.">
+        <img src="images/Rinjani.webp" alt="Gunung Rinjani">
+        <div class="card-text">
+          <h2>Gunung Rinjani</h2>
+          <p><strong>Lokasi:</strong> Nusa Tenggara Barat</p>
+          <p><strong>Ketinggian:</strong> 3.726 mdpl</p>
+          <p><strong>Tingkat Kesulitan:</strong> Sulit</p>
+          <p>Gunung berapi aktif yang terkenal dengan Danau Segara Anak.</p>
+        </div>
+      </div>
+
+      <div class="card" data-name="semeru" data-level="sulit" data-detail="Semeru juga disebut Mahameru, berarti 'Gunung Agung'. Rute populer dimulai dari Ranu Pane. Di jalur ini, kamu akan melewati Ranu Kumbolo dan Oro-Oro Ombo.">
+        <img src="images/ranu kumbolo.jpg" alt="Gunung Semeru">
+        <div class="card-text">
+          <h2>Gunung Semeru</h2>
+          <p><strong>Lokasi:</strong> Jawa Timur</p>
+          <p><strong>Ketinggian:</strong> 3.676 mdpl</p>
+          <p><strong>Tingkat Kesulitan:</strong> Sulit</p>
+          <p>Puncak tertinggi di Pulau Jawa, masih aktif dan sering erupsi kecil.</p>
+        </div>
+      </div>
+
+      <div class="card" data-name="bromo" data-level="mudah" data-detail="Bromo termasuk dalam Taman Nasional Bromo Tengger Semeru. Pendakian mudah via jeep dan anak tangga menuju kawah. Sangat populer untuk melihat sunrise dari Penanjakan.">
+        <img src="images/bromo.jpg" alt="Gunung Bromo">
+        <div class="card-text">
+          <h2>Gunung Bromo</h2>
+          <p><strong>Lokasi:</strong> Jawa Timur</p>
+          <p><strong>Ketinggian:</strong> 2.329 mdpl</p>
+          <p><strong>Tingkat Kesulitan:</strong> Mudah</p>
+          <p>Gunung ikonik, terkenal dengan sunrise dan lautan pasirnya.</p>
+        </div>
+      </div>
+
+      <!-- Gunung tambahan -->
+      <div class="card" data-name="slamet" data-level="sedang" data-detail="Gunung Slamet adalah gunung tertinggi di Jawa Tengah. Pendakian cukup menantang namun masih bisa diakses oleh pendaki pemula yang sudah terbiasa mendaki gunung menengah.">
+        <img src="images/Slamet.jpg" alt="Gunung Slamet">
+        <div class="card-text">
+          <h2>Gunung Slamet</h2>
+          <p><strong>Lokasi:</strong> Jawa Tengah</p>
+          <p><strong>Ketinggian:</strong> 3.428 mdpl</p>
+          <p><strong>Tingkat Kesulitan:</strong> Sedang</p>
+          <p>Gunung tertinggi di Jawa Tengah, cocok untuk pendaki yang ingin naik level.</p>
+        </div>
+      </div>
+
+      <div class="card" data-name="merbabu" data-level="sedang" data-detail="Gunung Merbabu terkenal dengan padang sabananya yang luas. Pendakian umum melalui jalur Selo dan Thekelan, cocok untuk pendaki menengah yang ingin menikmati panorama gunung berapi.">
+        <img src="images/Sabana Merbabu.jpg" alt="Gunung Merbabu">
+        <div class="card-text">
+          <h2>Gunung Merbabu</h2>
+          <p><strong>Lokasi:</strong> Jawa Tengah</p>
+          <p><strong>Ketinggian:</strong> 3.145 mdpl</p>
+          <p><strong>Tingkat Kesulitan:</strong> Sedang</p>
+          <p>Gunung cantik dengan jalur sabana yang memesona, cocok untuk pendaki menengah.</p>
+        </div>
+      </div>
+
+      <div class="card" data-name="kerinci" data-level="sulit" data-detail="Gunung Kerinci adalah gunung berapi tertinggi di Indonesia dan bagian dari Taman Nasional Kerinci Seblat. Dikenal dengan jalur pendakian panjang dan pemandangan kawah aktif yang luar biasa.">
+        <img src="images/Gunung-Kerinci.png" alt="Gunung Kerinci">
+        <div class="card-text">
+          <h2>Gunung Kerinci</h2>
+          <p><strong>Lokasi:</strong> Jambi</p>
+          <p><strong>Ketinggian:</strong> 3.805 mdpl</p>
+          <p><strong>Tingkat Kesulitan:</strong> Sulit</p>
+          <p>Gunung tertinggi di Sumatera dan Indonesia di luar Papua. Penuh tantangan dan keindahan.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2025 Ibrahim Surya Kusuma | Web Portofolio Gunung Indonesia</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
